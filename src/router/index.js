@@ -20,7 +20,34 @@ const routes = [{
     {
         path: '/home',
         name: 'Home',
-        component: Home
+        component: Home,
+        children: [
+
+            {
+                path: '/',
+                name: 'HomeShow',
+                component: () =>
+                    import ('../views/HomeShow.vue')
+            },
+            {
+                path: '/usermanager',
+                name: 'UserManager',
+                component: () =>
+                    import ('../views/UserManager.vue')
+            },
+            {
+                path: '/setting',
+                name: 'Setting',
+                component: () =>
+                    import ('../views/Setting.vue')
+            },
+            {
+                path: '/homeshow',
+                name: 'HomeShow',
+                component: () =>
+                    import ('../views/HomeShow.vue')
+            }
+        ]
     },
     {
         path: '/tapbar',

@@ -4,15 +4,15 @@
         default-active="1"
         router="router"
         class="el-menu-vertical-demo">
-            <el-menu-item index="1" route="home">
+            <el-menu-item index="1" route="homeshow">
                 <i class="el-icon-s-home"></i>
                 <span slot="title">首页</span>
             </el-menu-item>
-            <el-menu-item index="2" route="">
+            <el-menu-item index="2" route="usermanager">
                 <i class="el-icon-user-solid"></i>
                 <span slot="title">用户管理</span>
             </el-menu-item>
-            <el-menu-item index="3" route="">
+            <el-menu-item index="3" route="setting">
                 <i class="el-icon-setting"></i>
                 <span slot="title">设置</span>
             </el-menu-item>
