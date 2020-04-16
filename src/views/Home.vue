@@ -1,14 +1,17 @@
 <template>
   <div class="home">
     <el-container>
-      <el-header>
-        <el-row>
+      <el-header >
+        <el-row class="title"> 
           <el-col :span="22">
-            <h3>安心外卖管理平台</h3>
+            <h3 >安心外卖管理平台</h3>
           </el-col>
           <el-col :span="2">
-            <h4 @click="loginOut">退出</h4>
+            <h4 style="cursor:pointer" @click="loginOut">退出</h4>
           </el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="24" class="bottomboder">1</el-col>
         </el-row>
       </el-header>
       <el-container>
@@ -28,17 +31,30 @@
 <script>
 // @ is an alias to /src
 
-import TapBar from '../components/TapBar'
+import TapBar from "../components/TapBar";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     TapBar
   },
-  methods:{
-    loginOut(){
-      localStorage.removeItem('token')
-      this.$router.push({ path: '/login' })
+  methods: {
+    loginOut() {
+      localStorage.removeItem("token");
+      this.$router.push({ path: "/login" });
     }
   }
-}
+};
 </script>
+<style >
+.title{
+  background: linear-gradient(
+    to bottom right,
+    rgb(23, 211, 195),
+    rgb(255, 0, 234));
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+</style>
