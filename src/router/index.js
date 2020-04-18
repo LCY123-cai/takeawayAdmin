@@ -27,7 +27,8 @@ const routes = [{
                 path: '/',
                 name: 'HomeShow',
                 component: () =>
-                    import ('../views/HomeShow.vue')
+                    import ('../views/HomeShow.vue'),
+                redirect: '/HomeShow'
             },
             {
                 path: '/usermanager',
