@@ -110,6 +110,7 @@ export default {
   border-radius: 5px;
   padding: 10px;
   color: white;
+  cursor: pointer;
 }
 .totalBox h1{
   font-size: 25px;
