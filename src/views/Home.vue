@@ -4,7 +4,7 @@
       <el-header >
         <el-row class="title"> 
           <el-col :span="22">
-            <h3 >安心外卖管理平台</h3>
+            <h2 >安心外卖管理平台</h2>
           </el-col>
           <el-col :span="2">
             <h4 style="cursor:pointer" @click="loginOut">退出</h4>
